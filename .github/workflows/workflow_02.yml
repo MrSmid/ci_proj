@@ -1,5 +1,8 @@
 name: workflow_02
-on: [repository_dispatch]
+#on: [repository_dispatch]
+on:
+  push:
+    branches: [ master ]
 jobs:
   run_program:
     runs-on: ubuntu-latest
