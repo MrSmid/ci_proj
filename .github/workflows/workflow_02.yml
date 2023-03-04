@@ -4,6 +4,10 @@ jobs:
   cypress-run:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Triggering Wokflow 2"
       - name: Checkout
         uses: actions/checkout@v2
+        with: 
+          repository: MrSmid/ci_proj
+          ref: main
+      - name: Run
+        run: java Main.java
