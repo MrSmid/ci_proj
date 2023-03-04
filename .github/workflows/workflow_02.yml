@@ -12,6 +12,7 @@ jobs:
         with: 
           repository: MrSmid/ci_proj
           ref: main
+          path: ./src
           
       - name: Run
         run: java Main.java
