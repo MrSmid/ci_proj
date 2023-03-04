@@ -7,12 +7,11 @@ jobs:
   run_program:
     runs-on: ubuntu-latest
     steps:
-#      - name: Checkout
-#        uses: actions/checkout@v3
-#        with: 
-#          repository: MrSmid/ci_proj
-#          ref: main
-#          path: ./src
+      - name: Checkout
+        uses: actions/checkout@v3
+        with: 
+          repository: MrSmid/ci_proj
+          ref: master
           
       - name: Run
         run: java Main.java
