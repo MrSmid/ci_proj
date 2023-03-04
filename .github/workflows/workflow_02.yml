@@ -15,5 +15,4 @@ jobs:
 #          path: ./src
           
       - name: Run
-        run: -cp ./src Main
-#        run: java Main.java
+        run: java Main.java
