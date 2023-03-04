@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@v3
         with: 
           repository: MrSmid/ci_proj
-          ref: main
+          ref: src
           
       - name: Run
         run: java Main.java
