@@ -14,4 +14,4 @@ jobs:
           ref: main
           
       - name: Run
-        run: java Main.java
+        run: java src/Main.java
