@@ -13,6 +13,9 @@ jobs:
           repository: MrSmid/ci_proj
           ref: master
           
+      - name: Install python dependencies
+        run: python -m pip -U selenium
+        
       - name: Run
         run: python src/test.py
 #        run: java src/Main.java
